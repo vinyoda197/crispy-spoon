@@ -16,49 +16,46 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      
-    <body className={inter.className}>
-    <main className="flex min-h-screen flex-col items-center justify-between md:pt-0 md:pb-0 md:p-24">   
-    <header className='w-full'>
-      <nav
-        className="relative flex flex-row w-full items-center justify-between bg-stone-300 py-2 p-10 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 md:justify-between"
-        data-te-navbar-ref>
-        <div className='flex'>
-          <a href="https://www.bounty.media/" className="flex items-center">
-            <img src="https://static.wixstatic.com/media/d5edf8_fb4b0d101ffa4b688372a0ed2fa3ee17~mv2.png/v1/fill/w_152,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bounty_Logo_White_Text.png" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-          </a>
-        </div>
-        <div className="flex flex-wrap items-center justify-between px-3">
-          <div
-            className="grow basis-[100%] items-center lg:!flex lg:basis-auto"
-            id="navbarSupportedContentY"
-            data-te-collapse-item>
-            <ul
-              className="mr-auto flex flex-col lg:flex-row divide-x divide-slate-700"
-              data-te-navbar-nav-ref>
-              <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-              <Link className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90" href="/">Home</Link>
-              </li>
-              <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                <Link className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90" href="/about">About</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-      {children}
-      <footer className="w-full shadow bg-stone-300 sticky bottom-0">
-        <div className="w-full mx-auto p-4 md:flex md:items-center md:justify-between">
-          <span className="text-sm text-gray-900 sm:text-center">© 2023 <a href="https://www.bounty.media/" className="hover:underline">Bounty Media Pte. Ltd, Singapore.</a>
-        </span>
-        </div>
-    </footer>
-
-    </main>
-    </body>
-    
+    <html lang="en">  
+      <body className={inter.className}>
+        <main className="flex min-h-screen flex-col items-center justify-between md:pt-0 md:pb-0 md:p-24">   
+          <header className='w-full'>
+            <nav
+              className="relative flex flex-row w-full items-center justify-between bg-stone-300 py-2 p-10 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 md:justify-between"
+              data-te-navbar-ref>
+              <div className='flex'>
+                <a href="https://www.bounty.media/" className="flex items-center">
+                  <img src="https://static.wixstatic.com/media/d5edf8_fb4b0d101ffa4b688372a0ed2fa3ee17~mv2.png/v1/fill/w_152,h_23,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bounty_Logo_White_Text.png" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                </a>
+              </div>
+              <div className="flex flex-wrap items-center justify-between px-3">
+                <div
+                  className="grow basis-[100%] items-center lg:!flex lg:basis-auto"
+                  id="navbarSupportedContentY"
+                  data-te-collapse-item>
+                  <ul
+                    className="mr-auto flex flex-col lg:flex-row divide-x divide-slate-700"
+                    data-te-navbar-nav-ref>
+                    <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                    <Link className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90" href="/">Home</Link>
+                    </li>
+                    <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                      <Link className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90" href="/about">About</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+          {children}
+          <footer className="w-full shadow bg-stone-300 sticky bottom-0">
+            <div className="w-full mx-auto p-4 md:flex md:items-center md:justify-between">
+              <span className="text-sm text-gray-900 sm:text-center">© 2023 <a href="https://www.bounty.media/" className="hover:underline">Bounty Media Pte. Ltd, Singapore.</a>
+            </span>
+            </div>
+          </footer>
+        </main>
+      </body>
     </html>
   )
 }
